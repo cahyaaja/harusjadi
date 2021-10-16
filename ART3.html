@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>JobSearch 34</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <style>
+            body {
+                background-color: rgb(221, 220, 220);
+                background-image: url("abu.jpg");width: 2000;
+                background-repeat: repeat-x;
+            }
+            body {
+                text-align: center;
+                background-color: rgb(221, 220, 220);
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(248, 244, 244);
+            }
+
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .topnav a:hover {
+                background-color: white;
+                color: rgb(20, 36, 187);
+                padding-bottom: -3px;
+            }
+
+            .login {
+                margin-bottom: 20px;
+                width: 420px;
+                height: 100px;
+                font-size: 20px;
+                background-color: blue;
+                padding: 20px;
+            }
+
+            .div {
+                margin-bottom: 200px;
+                margin-left: 80px;
+            }
+
+            .header {
+                background-color: blue;
+                text-align: center;
+                font-size: 20px;
+                padding: 18px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .topnav {
+            overflow: hidden;
+            background-color: blue;
+            padding: 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: gray;
+            color: rgb(20, 36, 187);
+            padding-bottom: -5px;
+        }
+
+        .logo a {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            float: left;
+            font-family: Arial;
+            color:white;
+        }
+        .navbar {
+    width: 100%;
+    height: auto;
+    margin: -30px;
+    margin-left: 70px;
+    padding: 0;
+    padding: 8px;
+    margin-left: 0.3px;
+    margin-right: -50px;
+    background: blue;
+    box-shadow: 0 0 10px gray;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    float: left;
+}
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .toggler-navbar {
+    margin-left: 1280px;
+}
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #a0beee;
+    text-align: left;
+    font-size: 20px;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transform-origin: left center;
+    transition: .5s;
+}
+
+.sidebar.open {
+    transform: rotate3d(0, 0, 1, 0deg);
+}
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+    background: #0000003f;
+}
+
+.sidebar li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block
+}
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin-top: 17px;
+}
+
+.hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+    top: 2.5px;
+}
+
+.hamburger-menu span:nth-child(2) {
+    top: 11px;
+}
+
+.hamburger-menu span:nth-child(3) {
+    top: 21px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+    top: 14px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+      
+.container .input {
+        border: 0;
+        outline: none;
+        color: black;
+        margin-top: 50px;
+    }
+
+    .search_wrap {
+        width: 500px;
+        margin: 30px auto;
+    }
+
+.search_wrap .search_box {
+    position: relative;
+    width: 500px;
+    height: 60px;
+}
+
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.search_wrap .search_box .btn:hover {
+    background: rgb(199, 195, 195)
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap_1 .search_box .btn {
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+ .left {
+     text-align: left;
+ }
+        </style>
+        <body>
+            
+            <nav class="navbar">
+                <div class="topnav">
+                    <div class="logo"><a href="file:///C:/Users/rpl4093/Documents/Jobsearch%207.html" style="margin-top: -15px; padding-right: -15px;"><img src="arrow backk.png" width="50" style="margin-right: 10px; margin-top: 10px; margin-bottom: -10px;"></a></div><h4 style="padding-left: 540px; padding-top: 25px; color: white;">PT. LUDO KING</h4>
+                </div>
+                    <a class="toggler-navbar" style="margin-top: -60px; margin-bottom: 6px;">
+                        <div class="hamburger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+            </nav>
+
+
+            <div class="sidebar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Save Job</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+            </div>
+            
+            <script>
+                document.getElementsByClassName("toggler-navbar")[0].addEventListener("click", toogleClass);
+
+            function toogleClass() {
+                document.getElementsByClassName("hamburger-menu")[0].classList.toggle('open')
+                document.getElementsByClassName("sidebar")[0].classList.toggle('open')
+        }
+            </script>
+          <p></p><p></p>
+          <img src="ld.png" width="330" style="margin-top: 250px; margin-left: 20px; margin-right: 950px;"><p></p><p></p><p></p>
+          <h3 class="left" style="margin-left: 25px;">PT. LUDO KING</h3><p></p>
+          <h3 class="left" style="margin-left: 25px;">Surabaya,Jawa Timur
+              IDR 8.000.000 - 10.000.000 /Bulan</h3>
+          <p class="left" style="margin-left: 25px;"><i>Showing On 27 September 2021</i></p>
+          <p></p><p></p><p></p><p></p>
+          <h4 class="left" style="margin-left: 25px;">ART DIRECTOR</h4>
+
+          <h4 class="left" style="margin-left: 25px;">Persyaratan :</h4>
+          <p class="left" style="margin-left: 25px;">- Memiliki pengalaman dalam menulis cerita fiksi baik berupa novel maupun cerita bergambar seperti komik.</p>
+          <p class="left" style="margin-left: 25px;">- Memiliki imajinasi yang kuat dalam membuat cerita yang banyak berisi dialog dari karakter (memahami konsep script writer merupakan nilai tambah </p>
+          <p class="left" style="margin-left: 25px;">- Mampu mengembangkan ide ide yang baru.</p>
+          <p class="left" style="margin-left: 25px;">- Penguasaan bahasa yang baik.</p> 
+          <p class="left" style="margin-left: 25px;">- Kreatif dan mempunyai wawasan yang luas.</p>
+          <p class="left" style="margin-left: 25px;">- Jujur disiplin dan memiliki tanggung jawab yang tinggi.
+        </p>
+          
+
+          <h4 class="left" style="margin-left: 25px;">Tugas :</h4>
+          <p class="left" style="margin-left: 25px;">- untuk mengawasi, mensupervisi dan memberikan arahan mengenai artistik, visual dalam proses pembuatan sebuah iklan atau desain.</p>
+          <p class="left" style="margin-left: 25px;">- Bertanggung jawab pada gaya visual dan gambar di semua media komunikasi periklanan.</p>
+         
+        </br>
+          <h4 class="left" style="margin-left: 25px;">Spotlight On Company</h4>
+          <p class="left" style="margin-left: 25px;">PT LUDO KING 
+ Merupakan perusahaan yang bergerak didalam bidang tulisan khusus majalah.</p>
+
+          <center style="margin-top: -200px;">       
+          <a href="file:///C:/Users/rpl4093/Documents/Jobsearch%2017.html"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: -600px; padding-left: 80px; padding-right: 80px;">Simpan Pekerjaan</button></a>
+          <a href="file:///C:/Users/rpl4093/Documents/form%2022.html"><button type="button" class="btn btn-primary" style="margin-bottom: -600px; padding-left: 80px; padding-right: 80px;">Mulai Melamar</button></a>
+          </center>
+    </body>
+</html>

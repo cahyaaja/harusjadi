@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>JobSearch 8</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <style>
+            body {
+                text-align: center;
+                background: rgb(221, 220, 220);
+                margin: 0;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(248, 244, 244);
+            }
+
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .topnav a:hover {
+                background-color:white;
+                color: rgb(20, 36, 187);
+            }
+
+            .login {
+                margin-bottom: 20px;
+                width: 420px;
+                height: 100px;
+                font-size: 20px;
+                background-color: blue;
+                padding: 20px;
+            }
+
+            .div {
+                margin-bottom: 200px;
+                margin-left: 80px;
+            }
+
+            .header {
+                background-color: blue;
+                text-align: center;
+                font-size: 20px;
+                padding: 18px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .container .input {
+        border: 0;
+        outline: none;
+        color: black;
+    }
+
+    .search_wrap {
+        width: 500px;
+        margin: 30px auto;
+    }
+
+.search_wrap .search_box {
+    position: relative;
+    width: 500px;
+    height: 60px;
+}
+
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover {
+    background: rgb(199, 195, 195)
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap_1 .search_box .btn {
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+            .topnav {
+            overflow: hidden;
+            background-color: rgb(8, 75, 219);
+            padding: 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color:white;
+            color: rgb(20, 36, 187);
+        }
+
+        .logo a {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            float: left;
+            font-family: Arial;
+            color:white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="logo"><a href="file:///C:/Users/rpl4093/Documents/Jobsearch%204.html"><img src="outline.png"></a></div>
+            <h2 style="text-align: center; margin-top: 17px; margin-bottom: 5px; color: white;">Marketing</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="search_wrap search_wrap_1">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="Search...">
+                    <img src="search.png"
+                    <div class="btn btn_common">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="file:///C:/Users/rpl4093/Documents/Project/home.html">Home</a></li>
+                <li><a href="file:///C:/Users/rpl4093/Documents/Jobsearch%205.html">Search</a></li>
+                <li><a href="file:///C:/Users/rpl4093/Documents/Project/Jobsearch%2019.html">Save Job</a></li>
+                <li><a href="file:///C:/Users/rpl4093/Documents/Project/jobsearch%2020.html">Profile</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            document.getElementsByClassName("toggler-navbar")[0].addEventListener("click", toogleClass);
+
+        function toogleClass() {
+            document.getElementsByClassName("hamburger-menu")[0].classList.toggle('open')
+            document.getElementsByClassName("sidebar")[0].classList.toggle('open')
+    }
+        </script>
+          <p></p><p></p><p></p><p></p>
+        <!-- Akhir Navbar -->
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. MAJU JAYA</b><p>Jl. ni aja dulu no.05</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. SHOP-SHOP</b><p>Jl. nya lagi rusak no.15</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. SINARMU</b><p>Jl. untuk pejabat no.45</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. QULYNO CYDRO</b><p>Jl. pedas seperti mulutmu no.33</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. ATYQU RYMUC</b><p>Jl. lurus saja no.06</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. MY STAR</b><p>Jl. baper no.77</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. KYTA DYODYOLAN</b><p>Jl. cemas aku bersamamu no.54</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. VERLANDO</b><p>Jl. buntu no.02</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. SERIBU CITA</b><p>Jl. hanya kamu no.16</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. SUMBER SAKTI</b><p>Jl. suka suka no.11</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. FIFTY FIFTY</b><p>Jl. buaya no.44</p></button>
+        <button type="button" class="btn btn-primary login"><b style="color: white;">PT. LALY KRAMBON</b><p>Jl. gelatik no.23</p></button>
+    </body>
+</html>

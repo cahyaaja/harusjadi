@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>Formulir Pendaftaran</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            *:focus {
+                outline: none;
+            }
+            body {
+                font-family: Arial;
+                background-color: blue;
+                margin-top: -50px;
+                padding: 20px;
+            }
+            .login {
+                margin: 100px auto;
+                width: 400px;
+            }
+            .login-screen {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            .app-title {
+                text-align: center;
+                color: black;
+            }
+            .masuk {
+                text-align: left;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .login-form {
+                text-align: center;
+            }
+            .control-group {
+                margin-bottom: 10px;
+            }
+            input {
+                text-align: left;
+                background-color: #ECF0F1;
+                border: 2px solid transparent;
+                border-radius: 3px;
+                font-size: 13px;
+                font-weight: 200;
+                padding: 10px 2px 10px 10px;
+                width: 350px;
+                transition: border .5s;
+            }
+            input:focus {
+                border: 2px solid #3498DB;
+                box-shadow: none;
+            }
+            .btn {
+                border: 2px solid transparent;
+                background: #3498DB;
+                color: #ffffff;
+                font-size: 16px;
+                line-height: 25px;
+                padding: 10px 0;
+                text-decoration: none;
+                text-shadow: none;
+                border-radius: 3px;
+                box-shadow: 3px;
+                transition: 0.25s;
+                display: block;
+                width: 250px;
+                margin: 0 auto;
+            }
+            .btn:hover {
+                background-color: #2980B9;
+            }
+            .login-link {
+                font-size: 12px;
+                color: #444;
+                display: block;
+                margin-top: 12px;
+            }
+            .topnav {
+                overflow: hidden;
+                background-color: blue;
+                margin-top: -50px;
+            }
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .topnav a:hover {
+                background-color:white;
+                color: rgb(20, 36, 187);
+            }
+
+            .login {
+                margin-bottom: 17px;
+                width: 400px;
+                font-size: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="login">
+            <div class="login-screen">
+                <div class="app-title">
+                    <div class="masuk">Last Education</div>
+                    <div class="col-md-6">
+                        <select name="education" id="education" class="form-control">
+                            <option value=""></option>
+                            <option value="">SD</option>
+                            <option value="">SLTP</option>
+                            <option value="">SLTA</option>
+                            <option value="">D3</option>
+                            <option value="">S1</option>
+                            <option value="">S2</option>
+                            <option value="">S3</option>
+                        </select>
+                    </div>
+                </div>
+                <p>
+                <div class="form-group-row">
+                    <div class="col-ml-6">
+                        <h4 style="text-align: left;"><b>Work Experience</b></h4>
+                        <input type="text" name="Your Answer" class="form-control" id="Your Answer" placeholder="Your Answer">
+                    </div>
+                </div>
+                </p>
+
+                <div class="form-group-row">
+                    <div class="col-ml-6">
+                        <h4 style="text-align: left;"><b>University Name</b></h4>
+                        <input type="text" name="Your Answer" class="form-control" id="Your Answer" placeholder="Your Answer">
+                    </div>
+                </div>
+                <p>
+                <div class="col-md-6">
+                        <h4 style="text-align: left;"><b>The Major</b></h4>
+                        <select name="agama" id="agama" class="form-control">
+                            <option value=""></option>
+                            <option value="">Manager</option>
+                            <option value="">Officer Administrator</option>
+                            <option value="">Accountancy</option>
+                            <option value="">Marketing</option>
+                            <option value="">Logistic</option>
+                            <option value="">Cleaning Service</option>
+                            <option value="">Security</option>
+                            <option value="">Etc</option>
+                        </select>
+                    </div>
+                    </p>
+                    <p>
+                        <p>
+                            <div class="form-group-row">
+                                <div class="col-ml-6">
+                                    <h4 style="text-align: left;"><b>Upload CV</b></h4>
+                                    <input type="file" name="Your Answer" class="form-control" id="name" placeholder="Your Answer">
+                                </div>
+                            </div>
+                        </p>
+                            <div class="form-group-row">
+                                <div class="col-ml-6">
+                                    <h4 style="text-align: left;"><b>Ability</b></h4>
+                                    <input type="text" name="Your Answer" class="form-control" id="name" placeholder="Your Answer">
+                                </div>
+                            </div>
+                        <p></p>
+                            <div class="form-group-row">
+                                <div class="col-ml-6">
+                                    <h4 style="text-align: left;"><b>Tell me A Little About Yourself</b></h4>
+                                    <input type="text" name="Your Answer" class="form-control" id="name" placeholder="Your Answer">
+                                </div>
+                                <p></p><p></p><p></p><p></p>
+                                <div>
+                                    <a href="file:///C:/Users/rpl4093/Documents/Project/JobSearchh%2011.html"><button type="button" class="btn btn-outline-dark">Back</button></a><p></p><a href="file:///C:/Users/rpl4093/Documents/Project/Jobsearch%2015.html"><button type="button" class="btn btn-primary">Next</button></a>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </body>
+                        </html>
+                
